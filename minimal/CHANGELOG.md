@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Changed
+
+- The starter home page points to **Design** for colors, fonts and spacing.
+
 ## 0.1.0 (2026-11-12)
 
 ### Added
