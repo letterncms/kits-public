@@ -1,6 +1,6 @@
 # Minimal
 
-A home page, an about page and a blog with three posts, on one typeface and a calm design system. The site a new Lettern site starts from, unless you choose another.
+A home page, an about page and a blog with three posts, on one typeface and a calm design. The site a new Lettern site starts from, unless you choose another.
 
 ## Install
 

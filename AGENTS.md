@@ -14,9 +14,9 @@ A kit is a folder laid out like a site's own `content/` and `config/`, with `kit
 | `previews/<name>.png\|jpg\|webp` | The pictures `previews` names; the first is the one the installer and **Site Kits** show. 16:10, 960×600. The store lists a kit with them, so a kit we publish has at least two (Minimal: `home.webp` and `blog.webp`, which the website's listing names). |
 | `content/collections/<handle>.yaml` | A collection's definition, as a site keeps it. |
 | `content/collections/<handle>/[<locale>/][<parent>/]<slug>.md` | Its entries, always in this file layout whatever driver the collection uses: YAML front matter (`id`, `title`, `status`, `published_at`, `expires_at`, `origin`, `position`, `blueprint`, the fields) and the body field as Markdown or Block Markdown. Templates and components are entries of `templates` and `components`. `id` may be left out of an entry nothing names; every entry gets a new id when it is applied, and what named the old one (relations, parents, translations, menu items, links, component blocks) follows. `author`, `created_at` and `updated_at` are never written. |
-| `content/globals/<handle>.yaml` | A global set: its fields and values. |
+| `content/globals/<handle>.yaml` | A global: its fields and values. |
 | `content/navigation/<handle>.yaml` | A menu; items name entries by the ids in the kit. |
-| `content/design/tokens.json`, `custom.css`, `custom.js`, `code.json` | The design system and where its code loads. |
+| `content/design/tokens.json`, `custom.css`, `custom.js`, `code.json` | The design and where its code loads. |
 | `content/design/fonts/*.woff2` | Fonts (real WOFF2). |
 | `content/design/scripts/**.js`, `content/design/styles/**.css` | The design's scripts and styles, named as the design's code may be. |
 | `content/design/vendor/lock.json` and its files | Vendored libraries; every file must match the lock's hash. |
