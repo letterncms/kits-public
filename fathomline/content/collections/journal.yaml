@@ -8,7 +8,6 @@ routes:
   nl: '/journaal/{slug}'
   fr: '/journal/{slug}'
 template: journal
-body: content
 fields:
   -
     handle: content
