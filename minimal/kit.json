@@ -2,7 +2,7 @@
     "handle": "minimal",
     "name": "Minimal",
     "description": "A home page, an about page and a blog with three posts, on one typeface and a calm design.",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "license": "MIT",
     "languages": [
         "en"
