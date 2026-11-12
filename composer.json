@@ -1,0 +1,43 @@
+{
+    "name": "letterncms/kits-public",
+    "description": "The free site kits, for working on them. Each folder is its own package.",
+    "type": "project",
+    "license": "MIT",
+    "repositories": [
+        {
+            "type": "path",
+            "url": "*",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
+    "require": {
+        "letterncms/cms": "dev-main as 0.24.0",
+        "letterncms/fathomline": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^12.0"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Cms\\Kits\\Tests\\": "tests/",
+            "Cms\\Tests\\": "vendor/letterncms/cms/tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "allow-plugins": {
+            "letterncms/composer-plugin": true
+        },
+        "preferred-install": {
+            "letterncms/cms": "source",
+            "*": "dist"
+        },
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

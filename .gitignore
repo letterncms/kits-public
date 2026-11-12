@@ -1,0 +1,16 @@
+/vendor/
+/composer.lock
+/.phpunit.cache/
+
+# Composer puts the kits here (composer-plugin) and copies a site's front files here too
+/kits/
+/plugins/
+/index.php
+/cms
+/setup.php
+/.htaccess
+/public/
+/storage/
+/content/
+/config/
+.DS_Store
