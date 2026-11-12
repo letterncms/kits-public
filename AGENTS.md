@@ -4,14 +4,14 @@ The free site kits. Each folder is one package, `letterncms/<folder>` of type `c
 
 ## What a kit is
 
-A complete site to start from, copied into a site once. Afterwards the site owns every file: nothing links back, and a new version of the kit never reaches a site that applied an older one. A kit is not a theme: there is no theme layer, and the word is not used.
+A complete site to start from, copied into a site once. Afterwards the site owns every file: nothing links back, and a new version of the kit never reaches a site that applied an older one. Its design is part of it, as a site's is: tokens, templates and components are the kit's own files and entries, and nothing of it stays shared with the kit once applied.
 
 A kit is a folder laid out like a site's own `content/` and `config/`, with `kit.json` beside them. Only the files below are read; anything else under `content/`, `config/`, `public/` or `previews/` refuses the whole kit, by name, before a file is copied.
 
 | File | Holds |
 |---|---|
-| `kit.json` | `handle` (the folder's name), `name`, `version` (`1.2.3`, the same as `composer.json`), and optionally `description`, `license`, `cms` (a constraint, `>=0.24`), `plugins` (package names it needs), `languages` (codes, the main one first; `["en"]` when left out), `previews` (pictures in `previews/`), `demo` (an https address), `exported` (when it was made: a date ahead of it stays as far ahead when applied). No other keys. |
-| `previews/<name>.png\|jpg\|webp` | The pictures `previews` names; the first is the one the installer and **Site Kits** show. 16:10, 960×600. |
+| `kit.json` | `handle` (the folder's name), `name`, `version` (`1.2.3`, the same as `composer.json`), and optionally `description`, `license`, `cms` (a constraint, `>=0.25`), `plugins` (package names it needs), `languages` (codes, the main one first; `["en"]` when left out), `previews` (pictures in `previews/`), `demo` (an https address), `exported` (when it was made: a date ahead of it stays as far ahead when applied). No other keys. |
+| `previews/<name>.png\|jpg\|webp` | The pictures `previews` names; the first is the one the installer and **Site Kits** show. 16:10, 960×600. The store lists a kit with them, so a kit we publish has at least two (Fathomline: `home.webp` and `survey.webp`, which the website's listing names). |
 | `content/collections/<handle>.yaml` | A collection's definition, as a site keeps it. |
 | `content/collections/<handle>/[<locale>/][<parent>/]<slug>.md` | Its entries, always in this file layout whatever driver the collection uses: YAML front matter (`id`, `title`, `status`, `published_at`, `expires_at`, `origin`, `position`, `blueprint`, the fields) and the body field as Markdown or Block Markdown. Templates and components are entries of `templates` and `components`. `id` may be left out of an entry nothing names; every entry gets a new id when it is applied, and what named the old one (relations, parents, translations, menu items, links, component blocks) follows. `author`, `created_at` and `updated_at` are never written. |
 | `content/globals/<handle>.yaml` | A global set: its fields and values. |
