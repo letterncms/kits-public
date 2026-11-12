@@ -1,0 +1,44 @@
+title: Main
+max_depth: 2
+items:
+  -
+    id: fthm0001
+    entry: 01m7sh00010000000000000002
+    locales:
+      nl:
+        label: Opmetingen
+      fr:
+        label: Relevés
+  -
+    id: fthm0002
+    entry: 01m7sh00010000000000000003
+    locales:
+      nl:
+        label: Kantoor
+      fr:
+        label: Bureau
+    children:
+      -
+        id: fthm0003
+        entry: 01m7sh00010000000000000004
+        locales:
+          nl:
+            label: Methode
+          fr:
+            label: Méthode
+      -
+        id: fthm0004
+        entry: 01m7sh00010000000000000005
+        locales:
+          nl:
+            label: Correcties
+          fr:
+            label: Corrections
+  -
+    id: fthm0005
+    entry: 01m7sh00010000000000000006
+    locales:
+      nl:
+        label: Journaal
+      fr:
+        label: Journal

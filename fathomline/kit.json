@@ -4,5 +4,16 @@
     "description": "A survey office's site: WebGL fields, scroll choreography and client navigation, made with the admin's own blocks.",
     "version": "0.1.0",
     "license": "MIT",
-    "languages": ["en"]
+    "cms": ">=0.26",
+    "languages": [
+        "en",
+        "nl",
+        "fr"
+    ],
+    "previews": [
+        "previews/home.webp",
+        "previews/survey.webp"
+    ],
+    "demo": "https://lettern.org/kits/fathomline/",
+    "exported": "2026-11-12T02:25:05+00:00"
 }

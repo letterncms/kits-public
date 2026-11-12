@@ -1,0 +1,119 @@
+title: Journal
+singular: 'Journal Entry'
+icon: notebook
+driver: files
+structure: dated
+route: '/journal/{slug}'
+routes:
+  nl: '/journaal/{slug}'
+  fr: '/journal/{slug}'
+template: journal
+body: content
+fields:
+  -
+    handle: content
+    type: markdown
+    label: Text
+  -
+    handle: summary
+    type: textarea
+    label: Summary
+  -
+    handle: cover
+    type: media
+    label: Picture
+    max: 1
+    accept: 'image/*'
+  -
+    handle: topics
+    type: terms
+    label: Topics
+    taxonomy: topics
+    max: 3
+    section: sidebar
+blueprints:
+  report:
+    title: 'Field Report'
+    fields:
+      -
+        handle: content
+        type: markdown
+        label: Text
+      -
+        handle: summary
+        type: textarea
+        label: Summary
+      -
+        handle: cover
+        type: media
+        label: Picture
+        max: 1
+        accept: 'image/*'
+      -
+        handle: survey
+        type: entries
+        label: Survey
+        collections:
+          - surveys
+        max: 1
+      -
+        handle: station
+        type: text
+        label: Station
+        width: 50
+      -
+        handle: instrument
+        type: text
+        label: Instrument
+        width: 50
+      -
+        handle: conditions
+        type: select
+        label: Conditions
+        options:
+          calm: Calm
+          fresh: 'Fresh Breeze'
+          gale: Gale
+        localizable: false
+        width: 50
+      -
+        handle: gust
+        type: number
+        label: 'Strongest Gust in Knots'
+        if:
+          conditions:
+            - fresh
+            - gale
+        localizable: false
+        width: 50
+      -
+        handle: gust_text
+        type: text
+        label: 'Strongest Gust as Printed'
+        if:
+          conditions:
+            - fresh
+            - gale
+        localizable: false
+      -
+        handle: calibrated
+        type: toggle
+        label: 'Instruments Calibrated on Site'
+        localizable: false
+        width: 50
+      -
+        handle: calibration_date
+        type: date
+        label: 'Calibration Date'
+        required_if:
+          calibrated: true
+        localizable: false
+        width: 50
+      -
+        handle: topics
+        type: terms
+        label: Topics
+        taxonomy: topics
+        max: 3
+        section: sidebar
+nav_order: 12

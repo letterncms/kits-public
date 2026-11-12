@@ -1,0 +1,12 @@
+/* A survey's plate. scripts/plate.js draws its ground; until then, and without scripts, rings stand in. */
+.plate { position: relative; overflow: clip; }
+.plate canvas { position: absolute; inset: 0; width: 100%; height: 100%; transition: scale var(--duration-slow) var(--ease-out); }
+.plate::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-radial-gradient(ellipse 80% 60% at 62% 36%, transparent 0 17px, color-mix(in srgb, var(--color-foreground) 22%, transparent) 17px 18px);
+}
+.plate.is-drawn::before { content: none; }
+a:hover .plate canvas, a:focus-visible .plate canvas { scale: 1.06; }
+@media (prefers-reduced-motion: reduce) { .plate canvas { transition: none; } a:hover .plate canvas, a:focus-visible .plate canvas { scale: none; } }

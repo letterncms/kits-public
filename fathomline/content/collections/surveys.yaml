@@ -1,0 +1,111 @@
+title: Surveys
+singular: Survey
+icon: map-trifold
+driver: files
+structure: list
+route: '/work/{slug}'
+routes:
+  nl: '/opmetingen/{slug}'
+  fr: '/releves/{slug}'
+template: survey
+body: content
+sort: position
+fields:
+  -
+    handle: content
+    type: markdown
+    label: Report
+  -
+    handle: summary
+    type: textarea
+    label: Summary
+  -
+    handle: sheet
+    type: text
+    label: 'Sheet Number'
+    localizable: false
+    width: 50
+  -
+    handle: discipline
+    type: text
+    label: Discipline
+    width: 50
+  -
+    handle: client
+    type: text
+    label: Client
+    width: 50
+  -
+    handle: place
+    type: text
+    label: Place
+    width: 50
+  -
+    handle: position_text
+    type: text
+    label: Position
+    localizable: false
+    width: 33
+  -
+    handle: scale
+    type: text
+    label: Scale
+    localizable: false
+    width: 33
+  -
+    handle: year
+    type: text
+    label: Year
+    localizable: false
+    width: 33
+  -
+    handle: plate
+    type: media
+    label: Plate
+    max: 1
+    accept: 'image/*'
+  -
+    handle: downloads
+    type: file
+    label: Downloads
+    max: 4
+  -
+    handle: topics
+    type: terms
+    label: Topics
+    taxonomy: topics
+    max: 3
+    section: sidebar
+  -
+    handle: seed
+    type: number
+    decimals: true
+    label: 'Field: Ground'
+    instructions: 'Any number. Each is a different terrain behind this survey’s page.'
+    localizable: false
+    section: sidebar
+  -
+    handle: relief
+    type: number
+    decimals: true
+    label: 'Field: Relief'
+    instructions: '0 is flat water, 1 is rolling, 2 is steep.'
+    localizable: false
+    section: sidebar
+  -
+    handle: density
+    type: number
+    decimals: true
+    label: 'Field: Lines'
+    instructions: 'How close the contour lines sit. 1 is the usual.'
+    localizable: false
+    section: sidebar
+  -
+    handle: tilt
+    type: number
+    decimals: true
+    label: 'Field: View'
+    instructions: '0 looks straight down, 1 looks across the ground.'
+    localizable: false
+    section: sidebar
+nav_order: 11

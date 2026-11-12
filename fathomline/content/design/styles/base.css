@@ -1,0 +1,24 @@
+/* What tokens and block styles don't say. Loaded on every page (content/design/code.json). */
+
+/* Lenis (scripts/smooth.js) eases the wheel on top of native scrolling. */
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: clip; }
+
+/* Everything on the page sits on top of the field. */
+body > :is(header, main, footer) { position: relative; z-index: 1; }
+
+/* Focus is the accent, always visible, also on the dark sheet. */
+:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 4px; border-radius: 2px; }
+
+/* A link's rule draws in from the left. */
+.rule { background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat; transition: background-size var(--duration-base) var(--ease-out); }
+.rule:hover, .rule:focus-visible, a:hover .rule, a:focus-visible .rule { background-size: 100% 1px; }
+@media (prefers-reduced-motion: reduce) { .rule { transition: none; } }
+
+/* The numbers in a row line up. */
+.figures { font-variant-numeric: tabular-nums; }
+
+/* A label's halo (text-shadow on the blocks that sit on the field) stops at a button. */
+.cms-button { text-shadow: none; }

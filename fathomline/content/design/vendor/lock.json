@@ -1,0 +1,22 @@
+{
+    "imports": {
+        "lenis": {
+            "package": "lenis",
+            "version": "1.1.18",
+            "source": "https://cdn.jsdelivr.net/npm/lenis@1.1.18/+esm",
+            "path": "lenis@1.1.18/index.js",
+            "files": {
+                "lenis@1.1.18/index.js": "sha384-SJ6dx7gNL8Zqqg5dGAQcz3BKVbcbtIpM4KRLjUEWnTVazUubOrk02CadiHhb5I7P"
+            }
+        },
+        "three": {
+            "package": "three",
+            "version": "0.170.0",
+            "source": "https://cdn.jsdelivr.net/npm/three@0.170.0/+esm",
+            "path": "three@0.170.0/index.js",
+            "files": {
+                "three@0.170.0/index.js": "sha384-jCH8XhbfAyCL5aNbQsFeLeFSrB+4jxEWMu8+AuOjcut4XI9LsjVJxSVO68SWgfbY"
+            }
+        }
+    }
+}
