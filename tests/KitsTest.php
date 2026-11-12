@@ -80,7 +80,9 @@ final class KitsTest extends TestCase
         $this->app->make(KitFiles::class)->read($kit);
         $applier = $this->app->make(KitApplier::class);
 
-        // As a design over the kit that comes with the CMS, then whole into an empty site.
+        // As a design over the kit a new site starts from (the same kit's design over its own site is as good), then whole into an empty site.
+        Files::copyDirectory(dirname(__DIR__).'/minimal', site_path('kits/minimal'));
+        $kits->flush();
         $applier->apply($kits->findOrFail('minimal'), 'full', 'refuse', $this->admin(), withoutPlugins: true);
         $applier->apply($kit, 'design', 'rename', $this->admin(), withoutPlugins: true);
         $this->assertSame([], $this->app->make(SiteBuilder::class)->buildAll()['errors']);
