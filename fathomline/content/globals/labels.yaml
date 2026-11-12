@@ -1,0 +1,250 @@
+title: Labels
+icon: text-aa
+fields:
+  -
+    handle: sheet
+    type: text
+    label: Sheet
+  -
+    handle: client
+    type: text
+    label: Client
+  -
+    handle: place
+    type: text
+    label: Place
+  -
+    handle: position
+    type: text
+    label: Position
+  -
+    handle: scale
+    type: text
+    label: Scale
+  -
+    handle: year
+    type: text
+    label: Year
+  -
+    handle: plate
+    type: text
+    label: Plate
+  -
+    handle: downloads
+    type: text
+    label: Downloads
+  -
+    handle: previous
+    type: text
+    label: Previous
+  -
+    handle: next
+    type: text
+    label: Next
+  -
+    handle: all_surveys
+    type: text
+    label: 'All Surveys'
+  -
+    handle: surveys
+    type: text
+    label: Surveys
+  -
+    handle: journal
+    type: text
+    label: Journal
+  -
+    handle: filed_under
+    type: text
+    label: 'Filed Under'
+  -
+    handle: station
+    type: text
+    label: Station
+  -
+    handle: conditions
+    type: text
+    label: Conditions
+  -
+    handle: gust
+    type: text
+    label: 'Strongest Gust'
+  -
+    handle: instrument
+    type: text
+    label: Instrument
+  -
+    handle: survey
+    type: text
+    label: Survey
+  -
+    handle: nothing_filed
+    type: text
+    label: 'Nothing Filed'
+  -
+    handle: menu
+    type: text
+    label: 'Menu Button'
+  -
+    handle: theme
+    type: text
+    label: 'Light and Dark Button'
+  -
+    handle: language
+    type: text
+    label: 'Language Menu'
+  -
+    handle: office
+    type: text
+    label: Office
+  -
+    handle: pages
+    type: text
+    label: 'Footer Menu'
+  -
+    handle: colophon
+    type: text
+    label: Colophon
+  -
+    handle: pause
+    type: text
+    label: 'Pause Motion'
+  -
+    handle: play
+    type: text
+    label: 'Play Motion'
+  -
+    handle: lost_label
+    type: text
+    label: 'Not Found: Line Above'
+  -
+    handle: lost_title
+    type: text
+    label: 'Not Found: Title'
+  -
+    handle: lost_text
+    type: textarea
+    label: 'Not Found: Text'
+  -
+    handle: lost_home
+    type: text
+    label: 'Not Found: Button'
+  -
+    handle: home_link
+    type: link
+    label: 'Home Page'
+    types:
+      - entry
+  -
+    handle: surveys_link
+    type: link
+    label: 'Surveys Page'
+    types:
+      - entry
+data:
+  sheet: Sheet
+  client: Client
+  place: Place
+  position: Position
+  scale: Scale
+  year: Year
+  plate: Plate
+  downloads: Downloads
+  previous: Previous
+  next: Next
+  all_surveys: 'All surveys'
+  surveys: Surveys
+  journal: Journal
+  filed_under: 'Filed under'
+  station: Station
+  conditions: Conditions
+  gust: 'Strongest gust'
+  instrument: Instrument
+  survey: Survey
+  nothing_filed: 'Nothing is filed here yet.'
+  menu: Menu
+  theme: 'Switch between light and dark'
+  language: Language
+  office: Office
+  pages: Sheets
+  colophon: Colophon
+  pause: 'Pause motion'
+  play: 'Play motion'
+  lost_label: 'Sheet 404 — unsurveyed'
+  lost_title: 'Here be <em>nothing.</em>'
+  lost_text: 'No sheet covers this address. The ground may have moved, or nobody has been out to measure it yet.'
+  lost_home: 'Back to charted ground'
+  home_link:
+    type: entry
+    value: 01m6zz00000000000000000001
+  surveys_link:
+    type: entry
+    value: 01m7sh00010000000000000002
+locales:
+  nl:
+    sheet: Blad
+    client: Opdrachtgever
+    place: Plaats
+    position: Positie
+    scale: Schaal
+    year: Jaar
+    plate: Plaat
+    previous: Vorige
+    next: Volgende
+    all_surveys: 'Alle opmetingen'
+    surveys: Opmetingen
+    journal: Journaal
+    filed_under: Thema’s
+    conditions: Omstandigheden
+    gust: 'Sterkste windstoot'
+    survey: Opmeting
+    nothing_filed: 'Hier is nog niets ondergebracht.'
+    theme: 'Wissel tussen licht en donker'
+    language: Taal
+    office: Kantoor
+    pages: Bladen
+    colophon: Colofon
+    pause: 'Beweging pauzeren'
+    play: 'Beweging afspelen'
+    lost_label: 'Blad 404 — niet opgemeten'
+    lost_title: 'Hier is <em>niets.</em>'
+    lost_text: 'Geen blad dekt dit adres. De grond is misschien verschoven, of niemand is hem al gaan opmeten.'
+    lost_home: 'Terug naar gekarteerd terrein'
+    home_link:
+      type: entry
+      value: 01m7sh01010000000000000001
+    surveys_link:
+      type: entry
+      value: 01m7sh01010000000000000002
+  fr:
+    sheet: Feuille
+    client: Commanditaire
+    place: Lieu
+    scale: Échelle
+    year: Année
+    plate: Planche
+    downloads: Téléchargements
+    previous: Précédent
+    next: Suivant
+    all_surveys: 'Tous les relevés'
+    surveys: Relevés
+    filed_under: 'Classé sous'
+    gust: 'Rafale maximale'
+    survey: Relevé
+    nothing_filed: 'Rien n’est encore classé ici.'
+    theme: 'Basculer entre clair et sombre'
+    language: Langue
+    office: Bureau
+    pages: Feuilles
+    pause: 'Suspendre le mouvement'
+    play: 'Reprendre le mouvement'
+    lost_label: 'Feuille 404 — non levée'
+    lost_title: 'Ici, <em>rien.</em>'
+    lost_text: 'Aucune feuille ne couvre cette adresse. Le terrain a peut-être bougé, ou personne n’est encore allé le mesurer.'
+    lost_home: 'Retour en terrain cartographié'
+    home_link:
+      type: entry
+      value: 01m7sh02010000000000000001
+    surveys_link:
+      type: entry
+      value: 01m7sh02010000000000000002

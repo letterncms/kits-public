@@ -1,0 +1,64 @@
+title: Footer
+icon: layout
+fields:
+  -
+    handle: eyebrow
+    type: text
+    label: 'Line Above the Call'
+  -
+    handle: call
+    type: text
+    label: Call
+    instructions: 'Words between <em> and </em> are set in the italic serif.'
+  -
+    handle: action
+    type: text
+    label: Button
+  -
+    handle: action_link
+    type: link
+    label: 'Button Link'
+    types:
+      - entry
+      - url
+  -
+    handle: email
+    type: text
+    label: Email
+  -
+    handle: address
+    type: textarea
+    label: Address
+  -
+    handle: tagline
+    type: textarea
+    label: Colophon
+data:
+  eyebrow: 'Commission a survey'
+  call: 'Have ground that <em>moves?</em>'
+  action: 'Tell us about it'
+  email: hello@fathomline.example
+  address: 'Loods 9, Vuurtorenkaai<br>8400 Ostend'
+  tagline: 'Set in Hanken Grotesk, EB Garamond and IBM Plex Mono. Drawn in WebGL, built with Lettern.'
+  action_link:
+    type: entry
+    value: 01m7sh00010000000000000007
+locales:
+  nl:
+    eyebrow: 'Een opmeting bestellen'
+    call: 'Grond die <em>beweegt?</em>'
+    action: 'Vertel het ons'
+    address: 'Loods 9, Vuurtorenkaai<br>8400 Oostende'
+    tagline: 'Gezet in Hanken Grotesk, EB Garamond en IBM Plex Mono. Getekend in WebGL, gebouwd met Lettern.'
+    action_link:
+      type: entry
+      value: 01m7sh01010000000000000007
+  fr:
+    eyebrow: 'Commander un relevé'
+    call: 'Un terrain qui <em>bouge ?</em>'
+    action: Parlez-nous-en
+    address: 'Loods 9, Vuurtorenkaai<br>8400 Ostende'
+    tagline: 'Composé en Hanken Grotesk, EB Garamond et IBM Plex Mono. Dessiné en WebGL, construit avec Lettern.'
+    action_link:
+      type: entry
+      value: 01m7sh02010000000000000007
