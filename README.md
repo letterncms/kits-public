@@ -3,8 +3,8 @@
 The free site kits we make, in one place. A kit is a complete site to start from: its content, its design and its code, copied into your site once. Each one is in its own folder, with its own version and changelog, and installs on its own:
 
 ```bash
-composer require letterncms/fathomline
-php cms kit:apply fathomline --dry-run
+composer require letterncms/minimal
+php cms kit:apply minimal --dry-run
 ```
 
 Or choose one when you install, or under Design → Site Kits in the admin.
@@ -26,8 +26,8 @@ To try a kit in a real site, make a site next to your clone and point it there:
 composer create-project letterncms/lettern ../sandbox
 cd ../sandbox
 composer config repositories.kits path '../kits-public/*'
-composer require letterncms/fathomline
-php cms install --kit=fathomline
+composer require letterncms/minimal
+php cms install --kit=minimal
 php cms serve
 ```
 
