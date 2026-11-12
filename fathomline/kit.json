@@ -4,7 +4,7 @@
     "description": "A survey office's site: WebGL fields, scroll choreography and client navigation, made with the admin's own blocks.",
     "version": "0.2.0",
     "license": "MIT",
-    "cms": ">=0.26",
+    "cms": ">=0.28",
     "languages": [
         "en",
         "nl",

@@ -23,4 +23,4 @@ Or choose **Fathomline** when you install (`php cms install --kit=fathomline`, o
 
 ## Needs
 
-Lettern 0.26 or later. No plugins: the Journal's notices and the Commission page ask people to write to the office; with Forms or Brevo on, a form or a signup block goes in their place. Applying it brings scripts, so it needs the **Edit Custom CSS and JavaScript** permission. The fonts and libraries keep their own licences: see `NOTICE.md`.
+Lettern 0.28 or later. No plugins: the Journal's notices and the Commission page ask people to write to the office; with Forms or Brevo on, a form or a signup block goes in their place. Applying it brings scripts, so it needs the **Edit Custom CSS and JavaScript** permission. The fonts and libraries keep their own licences: see `NOTICE.md`.
