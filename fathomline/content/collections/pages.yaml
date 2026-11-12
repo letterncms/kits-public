@@ -11,6 +11,7 @@ fields:
   -
     handle: content
     type: blocks
+    body: true
     label: Content
   -
     handle: template

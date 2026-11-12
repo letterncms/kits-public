@@ -14,6 +14,7 @@ fields:
   -
     handle: content
     type: markdown
+    body: true
     label: Report
   -
     handle: summary

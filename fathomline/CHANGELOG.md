@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Changed
+
+- Each collection marks its body on the field (`body: true`), which the CMS reads from 0.28 on.
+
 ## 0.2.0 (2026-11-12)
 
 ### Added

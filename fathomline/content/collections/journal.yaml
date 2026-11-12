@@ -13,6 +13,7 @@ fields:
   -
     handle: content
     type: markdown
+    body: true
     label: Text
   -
     handle: summary
@@ -38,6 +39,7 @@ blueprints:
       -
         handle: content
         type: markdown
+        body: true
         label: Text
       -
         handle: summary
