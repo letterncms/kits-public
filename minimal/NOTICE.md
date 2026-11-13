@@ -1,6 +1,6 @@
 # Notices
 
-The kit is MIT (`LICENSE.md`). The font in it is its authors', under its own licence, below; it comes with the package wherever it is published.
+The site is MIT (`LICENSE.md`). The font in it is its authors', under its own licence, below; it comes with the package wherever it is published.
 
 | File | Is | Licence |
 |---|---|---|

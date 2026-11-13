@@ -1,6 +1,6 @@
 {
-    "name": "letterncms/kits-public",
-    "description": "The free site kits, for working on them. Each folder is its own package.",
+    "name": "letterncms/sites-public",
+    "description": "The free sites, for working on them. Each folder is its own package.",
     "type": "project",
     "license": "MIT",
     "repositories": [
@@ -21,7 +21,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Cms\\Kits\\Tests\\": "tests/",
+            "Cms\\Sites\\Tests\\": "tests/",
             "Cms\\Tests\\": "vendor/letterncms/cms/tests/"
         }
     },

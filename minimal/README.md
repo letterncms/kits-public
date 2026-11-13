@@ -6,11 +6,11 @@ A home page, an about page and a blog with three posts, on one typeface and a ca
 
 ```bash
 composer require letterncms/minimal
-php cms kit:apply minimal --dry-run
-php cms kit:apply minimal
+php cms site:apply minimal --dry-run
+php cms site:apply minimal
 ```
 
-Or choose **Minimal** when you install (`php cms install --kit=minimal`, or in the browser; it is the default), or under Design → Site Kits.
+Or choose **Minimal** when you install (`php cms install --site=minimal`, or in the browser; it is the default), or under Design → Sites.
 
 ## What it brings
 

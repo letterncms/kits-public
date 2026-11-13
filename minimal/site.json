@@ -11,6 +11,6 @@
         "previews/home.webp",
         "previews/blog.webp"
     ],
-    "cms": ">=0.26",
-    "demo": "https://lettern.org/kits/minimal/"
+    "cms": ">=0.34",
+    "demo": "https://lettern.org/sites/minimal/"
 }

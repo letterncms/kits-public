@@ -1,10 +1,10 @@
 {
     "name": "letterncms/minimal",
     "description": "A home page, an about page and a blog with three posts, on one typeface and a calm design.",
-    "type": "cms-kit",
+    "type": "cms-site",
     "version": "0.1.1",
     "license": "MIT",
     "require": {
-        "letterncms/cms": ">=0.26 <1"
+        "letterncms/cms": ">=0.34 <1"
     }
 }
