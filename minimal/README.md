@@ -10,7 +10,7 @@ php cms site:apply minimal --dry-run
 php cms site:apply minimal
 ```
 
-Or choose **Minimal** when you install (`php cms install --site=minimal`, or in the browser; it is the default), or under Design → Sites.
+Or choose **Minimal** when you install (`php cms install --start-from=minimal`, or in the browser; it is the default), or under Design → Sites.
 
 ## What it brings
 
