@@ -1,0 +1,58 @@
+title: Work
+singular: Project
+icon: briefcase
+driver: database
+structure: list
+route: '/work/{slug}'
+template: project
+sort: position
+nav_order: 15
+fields:
+  -
+    handle: content
+    type: blocks
+    body: true
+    label: Content
+  -
+    handle: summary
+    type: textarea
+    label: Summary
+    about: 'One sentence, shown under the title and in lists.'
+  -
+    handle: cover
+    type: media
+    label: Cover
+    max: 1
+    accept: 'image/*'
+    section: sidebar
+  -
+    handle: discipline
+    type: select
+    label: Discipline
+    options:
+      Furniture: Furniture
+      Ceramics: Ceramics
+      Rooms: Rooms
+      Print: Print
+    section: sidebar
+  -
+    handle: client
+    type: text
+    label: Client
+    section: sidebar
+  -
+    handle: place
+    type: text
+    label: Place
+    section: sidebar
+  -
+    handle: year
+    type: text
+    label: Year
+    section: sidebar
+  -
+    handle: template
+    type: select
+    label: Template
+    dynamic: templates
+    section: sidebar

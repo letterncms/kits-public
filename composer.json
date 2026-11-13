@@ -14,7 +14,7 @@
     ],
     "require": {
         "letterncms/cms": "dev-main as 0.26.0",
-        "letterncms/minimal": "*"
+        "letterncms/starter": "*"
     },
     "require-dev": {
         "phpunit/phpunit": "^12.0"

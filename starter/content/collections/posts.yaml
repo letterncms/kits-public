@@ -1,0 +1,48 @@
+title: Journal
+singular: Story
+icon: article
+driver: database
+structure: dated
+route: '/journal/{slug}'
+template: post
+sort: '-published_at'
+nav_order: 20
+fields:
+  -
+    handle: content
+    type: blocks
+    body: true
+    label: Content
+  -
+    handle: summary
+    type: textarea
+    label: Summary
+    about: 'One or two sentences, shown under the title and in lists.'
+  -
+    handle: cover
+    type: media
+    label: Cover
+    max: 1
+    accept: 'image/*'
+    section: sidebar
+  -
+    handle: topic
+    type: select
+    label: Topic
+    options:
+      Making: Making
+      Places: Places
+      People: People
+      Notes: Notes
+    section: sidebar
+  -
+    handle: tags
+    type: tags
+    label: Tags
+    section: sidebar
+  -
+    handle: template
+    type: select
+    label: Template
+    dynamic: templates
+    section: sidebar

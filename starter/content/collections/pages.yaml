@@ -1,0 +1,27 @@
+title: Pages
+singular: Page
+icon: page
+driver: database
+structure: tree
+route: '/{parent_uri}/{slug}'
+template: page
+sort: position
+home: home
+nav_order: 10
+fields:
+  -
+    handle: content
+    type: blocks
+    body: true
+    label: Content
+  -
+    handle: summary
+    type: textarea
+    label: Summary
+    section: sidebar
+  -
+    handle: template
+    type: select
+    label: Template
+    dynamic: templates
+    section: sidebar
