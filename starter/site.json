@@ -1,0 +1,16 @@
+{
+    "handle": "starter",
+    "name": "Starter",
+    "description": "A complete site to make your own: a home page, work, a journal, about and contact, a library of sections, and photography, video and sound throughout.",
+    "version": "0.0.0",
+    "license": "MIT",
+    "languages": [
+        "en"
+    ],
+    "previews": [
+        "previews/home.webp",
+        "previews/journal.webp"
+    ],
+    "cms": ">=0.36",
+    "demo": "https://lettern.org/sites/starter/"
+}

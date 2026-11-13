@@ -1,0 +1,46 @@
+/* Section styles: give a Section or a Box the class "band" (dark) or "tint" (warm grey),
+   under Content → Advanced → Classes. Text, muted text, lines and buttons inside follow. */
+.band {
+  --color-foreground: var(--color-band-foreground);
+  --color-muted: var(--color-band-muted);
+  --color-border: rgb(239 237 231 / 0.16);
+  --color-primary: var(--color-band-foreground);
+  --color-primary-foreground: var(--color-band);
+  --color-surface: rgb(239 237 231 / 0.06);
+  --color-raised: rgb(239 237 231 / 0.06);
+  background-color: var(--color-band);
+  color: var(--color-band-foreground);
+}
+.tint { background-color: var(--color-tint); }
+
+html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; }
+body { font-optical-sizing: auto; font-feature-settings: "cv11", "ss03"; }
+
+/* Photographs and films fill the box they are given, with square corners. */
+.cms-image img, .cms-video video { display: block; width: 100%; height: 100%; object-fit: cover; }
+.cms-gallery__item img, .cms-gallery__item picture, .cms-gallery__item a { border-radius: 0; }
+
+/* Quotations are set in the serif, large, without a rule. */
+.cms-quote blockquote, .cms-prose blockquote:where(:not(.cms-box, .cms-repeat)) {
+  border: 0;
+  padding: 0;
+  font-family: var(--font-serif);
+  font-size: var(--text-3xl);
+  line-height: 1.12;
+  letter-spacing: -0.005em;
+  text-wrap: balance;
+}
+.cms-quote figcaption { margin-top: 1.25rem; }
+
+/* Tables read at the size of the text around them. */
+.cms-table th, .cms-table td { font-size: inherit; padding-block: 0.9em; }
+
+/* Over a photograph: give the box the class "on-photo". Text, lines and buttons turn light. */
+.on-photo {
+  --color-foreground: #fff;
+  --color-muted: rgb(255 255 255 / 0.78);
+  --color-border: rgb(255 255 255 / 0.3);
+  --color-primary: #fff;
+  --color-primary-foreground: #191816;
+  color: #fff;
+}

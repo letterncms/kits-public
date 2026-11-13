@@ -1,0 +1,36 @@
+title: Studio
+icon: storefront
+fields:
+  -
+    handle: tagline
+    type: text
+    label: Tagline
+  -
+    handle: address
+    type: textarea
+    label: Address
+  -
+    handle: hours
+    type: text
+    label: 'Opening Hours'
+  -
+    handle: email
+    type: text
+    label: Email
+  -
+    handle: phone
+    type: text
+    label: Phone
+  -
+    handle: instagram
+    type: url
+    label: Instagram
+data:
+  tagline: 'Furniture, ceramics and rooms, made slowly by the sea.'
+  address: |-
+    Harbour Road 12
+    4381 Westkapelle
+  hours: 'Workshop open Thursday to Saturday, 10 to 5'
+  email: hello@example.com
+  phone: '+31 20 123 4567'
+  instagram: 'https://www.instagram.com/'

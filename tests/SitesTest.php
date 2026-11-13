@@ -81,9 +81,9 @@ final class SitesTest extends TestCase
         $applier = $this->app->make(SiteApplier::class);
 
         // As a design over the site a new site starts from (the same site's design over its own site is as good), then whole into an empty site.
-        Files::copyDirectory(dirname(__DIR__).'/minimal', site_path('sites/minimal'));
+        Files::copyDirectory(dirname(__DIR__).'/starter', site_path('sites/starter'));
         $sites->flush();
-        $applier->apply($sites->findOrFail('minimal'), 'full', 'refuse', $this->admin(), withoutPlugins: true);
+        $applier->apply($sites->findOrFail('starter'), 'full', 'refuse', $this->admin(), withoutPlugins: true);
         $applier->apply($sitePackage, 'design', 'rename', $this->admin(), withoutPlugins: true);
         $this->assertSame([], $this->app->make(SiteBuilder::class)->buildAll()['errors']);
 

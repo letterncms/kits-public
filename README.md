@@ -3,8 +3,8 @@
 The free sites we make, in one place. A site is a complete site to start from: its content, its design and its code, copied into your site once. Each one is in its own folder, with its own version and changelog, and installs on its own:
 
 ```bash
-composer require letterncms/minimal
-php cms site:apply minimal --dry-run
+composer require letterncms/starter
+php cms site:apply starter --dry-run
 ```
 
 Or choose one when you install, or under Design → Sites in the admin.
@@ -26,8 +26,8 @@ To try a site in a real site, make a site next to your clone and point it there:
 composer create-project letterncms/lettern ../sandbox
 cd ../sandbox
 composer config repositories.sites path '../sites-public/*'
-composer require letterncms/minimal
-php cms install --start-from=minimal
+composer require letterncms/starter
+php cms install --start-from=starter
 php cms serve
 ```
 
