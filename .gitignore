@@ -2,8 +2,8 @@
 /composer.lock
 /.phpunit.cache/
 
-# Composer puts the kits here (composer-plugin) and copies a site's front files here too
-/kits/
+# Composer puts the sites here (composer-plugin) and copies a site's front files here too
+/sites/
 /plugins/
 /index.php
 /cms
