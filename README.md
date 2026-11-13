@@ -27,7 +27,7 @@ composer create-project letterncms/lettern ../sandbox
 cd ../sandbox
 composer config repositories.sites path '../sites-public/*'
 composer require letterncms/minimal
-php cms install --site=minimal
+php cms install --start-from=minimal
 php cms serve
 ```
 
